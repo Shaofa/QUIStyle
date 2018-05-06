@@ -1,0 +1,134 @@
+/****************************************************************/
+/* QPushButton 
+/****************************************************************/
+QPushButton{
+    border-style:none;
+    border-radius:1px;
+    padding:5px 30px;
+    color:black;
+    background:#FFFFFF;
+    border: 1px solid #1ABC9C; 
+}
+QPushButton:hover{
+    color:#E6F8F5;
+    background:#1ABC9C;
+}
+QPushButton:pressed{
+    color:#16A086;
+    background:#A7EEE6;
+}
+
+/****************************************************************/
+/* QLineEdit 
+/****************************************************************/
+QLineEdit{
+    border-style: none;
+    padding: 5px;
+    border-radius: 1px;
+    border:1px solid #FFFFFF;
+}
+QLineEdit:focus{
+    border-color: #1ABC9C;
+}
+
+/****************************************************************/
+/* QTabWidget 
+/****************************************************************/
+QTabWidget::pane {
+    border: 1px solid #1ABC9C;  
+}  
+QTabBar::tab {  
+    border:1px solid #1ABC9C;  
+    border-bottom: 0px;
+    padding: 2px 5px;  
+}  
+QTabBar::tab:selected, QTabBar::tab:hover {  
+}  
+QTabBar::tab:selected {  
+    color:#E6F8F5;
+    background:#1ABC9C;
+}  
+QTabBar::tab:!selected {  
+    margin-top: 4px;
+}  
+
+/****************************************************************/
+/* QComboBox
+/****************************************************************/
+QComboBox {
+    border: 1px solid #1ABC9C;
+    padding: 5px;
+}
+QComboBox::drop-down {
+    width: 20px;
+    border-left: 1px solid #1ABC9C;
+}
+QComboBox::down-arrow {
+    image: url(style/down_arrow.png);
+}
+
+/****************************************************************/
+/* QGroupBox
+/****************************************************************/
+QGroupBox {
+    border: 1px solid #A6E4D6;
+    border-radius: 4px;
+    margin-top: 0.5em; 
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 0px 3px;
+}
+
+/****************************************************************/
+/* QRadioButton
+/****************************************************************/
+QRadioButton::indicator:checked {
+    image: url(style/radio_check.png)
+}
+QRadioButton::indicator:unchecked {
+    image: url(style/radio_uncheck.png)
+}
+
+/****************************************************************/
+/* QCheckBox
+/****************************************************************/
+QCheckBox::indicator:checked {
+    image: url(style/checkbox_check.png)
+}
+QCheckBox::indicator:unchecked {
+    image: url(style/checkbox_uncheck.png)
+}
+
+/****************************************************************/
+/* QTreeWidget
+/****************************************************************/
+QTreeWidget {
+    border: 1px solid #1ABC9C;
+}
+QTreeWidget::item{
+    margin:5px;
+    background: white;
+    background-clip: margin;
+}
+QTreeView::item:hover {
+    background: #EEE;
+}
+QTreeView::item:selected:active{
+    background: #1ABC9C;
+}
+QTreeWidget::branch:closed:has-children {
+    border-image: none;
+    image: url(style/tree_close.png);
+}
+QTreeWidget::branch:open:has-children {
+    border-image: none;
+    image: url(style/tree_open.png);
+}
+
+/****************************************************************/
+/* QTableWidget
+/****************************************************************/
+QTableWidget {
+}
